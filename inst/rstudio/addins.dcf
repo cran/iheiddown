@@ -1,0 +1,4 @@
+Name: Edit bookdown profile
+Description: Quickly open up the bookdown profile file for the thesis template in the iheiddown package.
+Binding: bookdown_profile
+Interactive: false
