@@ -11,8 +11,8 @@ preview_start(file_path, ...)
 preview_stop(which = NULL)
 }
 \arguments{
-\item{file_path}{The input Rmd file path (if missing and in RStudio, the current
-active document is used).}
+\item{file_path}{The input Rmd file path (if missing and in RStudio, the
+current active document is used).}
 
 \item{...}{Additional arguments passed to
 \code{rmarkdown::\link[rmarkdown]{render}()}.}

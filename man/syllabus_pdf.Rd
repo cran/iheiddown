@@ -9,7 +9,8 @@ syllabus_pdf(input, ...)
 \arguments{
 \item{input}{The name of the .Rmd file to serve as input.}
 
-\item{...}{Instructions passed to the function from a correctly specified .Rmd document}
+\item{...}{Instructions passed to the function from a correctly specified
+.Rmd document}
 }
 \value{
 A modified \code{pdf_document} based on the IHEID Syllabus LaTeX
@@ -23,6 +24,7 @@ to specify using the IHEID Syllabus LaTeX template file.
 \dontrun{
 output:
   iheiddown::syllabus_pdf:
-    input: "Untitled.Rmd" # Replace with whatever the name of this file is, e.g. "MINT001.Rmd"
+    input: "Untitled.Rmd" 
+    # Replace with whatever the name of this file is, e.g. "MINT001.Rmd"
 }
 }

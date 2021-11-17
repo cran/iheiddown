@@ -28,7 +28,7 @@ theme_iheid(
   axis_title_face = "plain",
   axis_title_just = "rt",
   plot_margin = margin(30, 30, 30, 30),
-  grid_col = iheid_palette("IHEID")["IHEIDBlack"],
+  grid_col = "grey85",
   grid = TRUE,
   axis_col = iheid_palette("IHEID")["IHEIDBlack"],
   axis = FALSE,
@@ -58,7 +58,8 @@ theme_iheid(
 
 \item{grid_col, axis_col}{grid & axis colors; both default to \verb{#cccccc}}
 
-\item{grid}{panel grid (\code{TRUE}, \code{FALSE}, or a combination of \code{X}, \code{x}, \code{Y}, \code{y})}
+\item{grid}{panel grid (\code{TRUE}, \code{FALSE}, or a
+combination of \code{X}, \code{x}, \code{Y}, \code{y})}
 
 \item{axis}{add x or y axes? \code{TRUE}, \code{FALSE}, "\code{xy}"}
 
@@ -75,7 +76,6 @@ library(ggplot2)
 library(dplyr)
 
 # seminal scatterplot
-
 ggplot(mtcars, aes(mpg, wt)) +
   geom_point() +
   labs(x="Fuel efficiency (mpg)", y="Weight (tons)",
@@ -85,7 +85,6 @@ ggplot(mtcars, aes(mpg, wt)) +
   theme_iheid()
 
 # seminal bar chart
-
 count(mpg, class) \%>\%
   ggplot(aes(class, n)) +
   geom_col() +

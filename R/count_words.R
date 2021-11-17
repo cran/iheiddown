@@ -1,9 +1,10 @@
 #' A function for counting words in an Rmarkdown document.
 #'
-#' This function takes a path to a .Rmd file and returns a word count. 
-#' For best results each sentence should start on a new line. 
+#' This function takes a path to a .Rmd file and returns a word count.
+#' For best results each sentence should start on a new line.
 #' Inline code chunks should also start on a new line.
-#'
+#' 
+#' @name countwords
 #' @param file A path to a .Rmd file
 #' @import dplyr
 #' @importFrom rlang .data
@@ -11,17 +12,21 @@
 #' @importFrom tibble as_tibble
 #' @importFrom rstudioapi getSourceEditorContext
 #' @importFrom tidytext unnest_tokens
+#' @importFrom pdftools pdf_text
 #' @return A scalar representing the number of words in the document.
 #' @examples
 #' rmarkdown::draft(file = "test", template = "html_vignette",
 #' package = "rmarkdown", create_dir = TRUE, edit = FALSE)
 #' iheiddown::count_words("test/test.Rmd")
 #' unlink("test", recursive = TRUE)
+#'
+NULL
+
+#' @rdname countwords
 #' @export
 count_words <- function(file) {
   # Get currently viewed panel in RStudio if file is not specified
-  if(missing(file)) file <- rstudioapi::getSourceEditorContext()$path
-  
+  if (missing(file)) file <- rstudioapi::getSourceEditorContext()$path
   wc <- readr::read_lines(file) %>%
     tibble::as_tibble() %>%
     remove_front_matter() %>%
@@ -32,6 +37,22 @@ count_words <- function(file) {
     nrow()
   return(wc)
 }
+
+#' @rdname countwords
+#' @export
+count_words2 <- function(file) {
+  # Get currently viewed panel in RStudio if file is not specified
+  if (missing(file)) {
+    file <- rstudioapi::getSourceEditorContext()$path
+    file <- stringr::str_replace(file, ".Rmd", ".pdf")
+  } 
+  
+  pdf <- pdftools::pdf_text(file)
+  wc <- sum(unlist(lapply(wc, function(x) length(x))))
+
+  return(wc)
+}
+
 
 # Helper function for removing unwanted lines from count
 # Checks is value is odd.

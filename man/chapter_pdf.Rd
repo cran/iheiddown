@@ -9,15 +9,17 @@ chapter_pdf(input, ...)
 \arguments{
 \item{input}{Rmd input file that will be processed by the function.}
 
-\item{...}{Instructions passed to the function from a correctly specified .Rmd document}
+\item{...}{Instructions passed to the function from a correctly specified
+.Rmd document}
 }
 \value{
 A modified \code{pdf_document} based on the IHEID Thesis LaTeX
 template
 }
 \description{
-This function can be used in the header of each constituent chapter of an IHEID thesis
-to output a draft version of the chapter for proofreading or sending to your supervisor.
+This function can be used in the header of each constituent chapter of an
+IHEID thesis to output a draft version of the chapter for proofreading or
+sending to your supervisor.
 }
 \examples{
 \dontrun{

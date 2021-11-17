@@ -36,7 +36,8 @@ the workflow of writing your very own scholarly documents in R.
 
 ## Installation
 
-To use `{iheiddown}`'s template you'll need the following software:
+The installation process is the same than for the thesis template. You'll need
+the following software:
 
 1. Install [R](https://cran.r-project.org) and [R-Studio](https://www.rstudio.com/)
 2. Install a LATEX distribution:
@@ -44,14 +45,10 @@ To use `{iheiddown}`'s template you'll need the following software:
     - [For Windows](https://miktex.org/)
     - [For Linux](https://www.tug.org/texlive/)
 3. Install `{iheiddown}` by typing the following command
-`remotes::install_github("jhollway/iheiddown")` in the R-Studio console.
-  - The package will soon be made available on CRAN. This will enable you to
-  install the package even faster by simply typing
-  `install.packages("iheiddown")`. We will update the vignette when this is the
-  case.
+`install.packages("iheiddown") ` in the R-Studio console. 
 
-Note: typing `remotes::install_github("jhollway/iheiddown")` again will update
-the package to the latest released version.
+Note: typing `remotes::install_github("jhollway/iheiddown")` will provide you
+with the latest version from GitHub.
 
 ## Create your first thesis project
 
@@ -62,7 +59,9 @@ appears. Now that we have created an R project for our presentation, we can open
 a new R-Markdown file. To do this click on the "plus file" logo in the top left
 corner and then on "R-Markdown".
 
-![Step 1: open a new project](images/thesis/0-Open_Project.PNG){width="80%"}
+```{r, echo = FALSE, out.width="80%", fig.cap="Step 1: Open a project"}
+  knitr::include_graphics("images/thesis/0-Open_Project.PNG", dpi = 144)
+```
 
 After you have done this, a little pop-up helper will appear. The first thing we
 will do is to select the `{iheiddown}` template for our thesis. To do so,
@@ -75,7 +74,9 @@ file is called `index.Rmd` which is required to render your thesis with
 our `{bookdown}` based rendering function. Don't worry though, you can rename
 the folder to your project name after creating it.
 
-![Step 2: select the template](images/thesis/1-Create_Thesis.PNG){width="80%"}
+```{r, echo = FALSE, out.width="80%", fig.cap="Step 2: Select a template"}
+  knitr::include_graphics("images/thesis/1-Create_Thesis.PNG", dpi = 144)
+```
 
 Congrats! You just created your first thesis project!
 

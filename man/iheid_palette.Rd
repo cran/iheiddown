@@ -4,7 +4,8 @@
 \alias{iheid_palette}
 \title{An IHEID palette generator}
 \source{
-Adapted from https://github.com/karthik/wesanderson/blob/master/R/colors.R
+Adapted from
+\url{https://github.com/karthik/wesanderson/blob/master/R/colors.R}
 }
 \usage{
 iheid_palette(name, n, type = c("discrete", "continuous"))
@@ -23,8 +24,9 @@ A vector of colours.
 }
 \description{
 These are a few color palettes useful for members of the Graduate Institute.
-This function calls one of three official palettes in \code{\link{iheid_palette}}:
-for the Institute, for the Centres, and for the SDGs.
+This function calls one of three official palettes in
+\code{\link{iheid_palette}}: for the Institute, for the Centres, and for the
+SDGs.
 }
 \examples{
 iheid_palette("IHEID")

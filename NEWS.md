@@ -1,3 +1,59 @@
+# iheiddown 0.8.6
+
+# Minor fix
+
+- Re-rendered README.md manually following CRAN comments about a potentially invalid URL
+
+# iheiddown 0.8.5
+
+## Minor fixes
+
+- Fixed workflow issue in README rendering job and Website rendering job
+- Fixed CRAN flagged issues:
+  - Invalid link in README
+  - Path issues to images used in the problem set vignette
+
+# iheiddown 0.8.4
+
+## Changed the website theme:
+
+- Added a new CSS theme to the website
+- Closed #107 By fixing the rendering issues of the website
+
+## Other minor fixes:
+
+- Closed #108  by adding a table of contents to the README
+- Closed #111 fixed `{genderdata}` dependency issue by relying on a different source for name comparisons
+- Closed #109 by adding an extended printing function
+- Closed #110 by adding missing logos and creating a table listing available logos and their selectors on the presentation vignette.
+
+## Thesis
+
+- Added a second word count function, `count_words2()`, that obtains a more accurate word count estimate from the compiled PDF
+
+# iheiddown 0.8.3
+
+## Problem set template
+- Closed #94 by adding a problem set template to `{iheiddown}`
+
+## Thesis
+- Closed #76 by adding an option for line numbering for thesis output when the
+draft option is set to true
+
+## Package
+- Fixed #90 by solving the remaining issues of the package website deployment
+workflow
+- Closed #91 by removing unnecessary package dependencies following CRAN notes
+- Closed #93 by adding bibliography statistics family of functions
+  - `percent_female()` displays the percentage of female authors in a `.bib`
+  file
+  - `mean_year()` displays the mean of the publication year of the items in a
+  given `.bib` file
+  - `mean_pages()` displays the mean of the page length of the items in a given
+  `.bib` file
+  - `total_pages()` displays the total number of pages of all items in a given
+  `.bib` file
+
 # iheiddown 0.8.2
 
 - This release attends to the changes requested by CRAN:
