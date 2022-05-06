@@ -23,7 +23,7 @@ to automatically interpolate between colours.}
 A vector of colours.
 }
 \description{
-These are a few color palettes useful for members of the Graduate Institute.
+These are a few color palettes useful for members of the  Geneva Graduate Institute.
 This function calls one of three official palettes in
 \code{\link{iheid_palette}}: for the Institute, for the Centres, and for the
 SDGs.

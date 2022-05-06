@@ -12,8 +12,8 @@ pkgs <- c("iheiddown", "magrittr", "ggplot2")
 lapply(pkgs, library, character.only = TRUE)
 
 ## ---- echo = FALSE, out.width="80%", fig.cap="Step 1: Open a project"---------
-  knitr::include_graphics("images/syllabus/0-Open_Project.PNG", dpi = 144)
+  knitr::include_graphics("images/syllabus/0-OpenProject.png", dpi = 144)
 
 ## ---- echo = FALSE, out.width="80%", fig.cap="Step 2: Select a template"------
-  knitr::include_graphics("images/syllabus/1-Create_Syllabus.PNG", dpi = 144)
+  knitr::include_graphics("images/syllabus/1-CreateSyllabus.png", dpi = 144)
 

@@ -22,10 +22,10 @@ lapply(pkgs, library, character.only = TRUE)
 #  lapply(pkgs, library, character.only = TRUE)
 
 ## ---- echo = FALSE, out.width="80%", fig.cap="Step 1: Open a project"---------
-  knitr::include_graphics("images/presentations/0-Open_Project.PNG", dpi = 144)
+  knitr::include_graphics("images/presentations/0-OpenProject.png", dpi = 144)
 
 ## ---- echo = FALSE, out.width="80%", fig.cap="Step 2: Select a template"------
-  knitr::include_graphics("images/presentations/1-Select_Template.PNG", dpi = 144)
+  knitr::include_graphics("images/presentations/1-SelectTemplate.png", dpi = 144)
 
 ## ---- eval=FALSE, echo=TRUE---------------------------------------------------
 #  # Install/Load the servr package if you haven't done it already
