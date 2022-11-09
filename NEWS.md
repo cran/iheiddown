@@ -1,3 +1,17 @@
+# iheiddown 0.9.7
+
+## Package updates:
+
+- Updated website links for RStudio to "posit"
+
+# iheiddown 0.9.6
+
+## Package updates:
+
+- Closed #129 by updating GitHub workflows to implement package caching
+- Closed #130 by fixing theme issue relating to ggplot2's change from "size" to "linewidth"
+- Closed #131 by fixing website rendering issues
+
 # iheiddown 0.9.5
 
 ## Package updates:
